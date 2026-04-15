@@ -6,7 +6,7 @@
 
 void can_init(void)
 {
-VPBDIV=1;          //pclk=60mhz;
+VPBDIV = 0;          //pclk=15mhz;
 //PINSEL1|=0x40000;  //p0.25 ->Rd1
 PINSEL1|=(1<<18);
 PINSEL1|=(1<<16);
