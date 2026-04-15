@@ -13,7 +13,7 @@ PINSEL1|=(1<<16);
 C1MOD=0x1;		   //reset mode
 
 	AFMR=2;			   //accept all	incoming  msg
-C1BTR=0x001c001d;  //125kbps baudrate
+C1BTR = 0x003C0007;  // ~125 kbps (approx)
 C1MOD=0x0;		   //release reset mode
 }
 
