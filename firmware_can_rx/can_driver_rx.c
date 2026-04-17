@@ -10,7 +10,7 @@ VPBDIV=1;          //pclk=60mhz;
 PINSEL1|=0x40000;  //p0.25 ->Rd1
 C1MOD=0x1;		   //reset mode
 AFMR=2;			   //accept all	incoming 
-C1BTR=0x001c001d;  //125kbps baudrate
+C1BTR = 0x003C0007;  // ~125 kbps (approx)
 C1MOD=0x0;		   //release reset mode
 } 
 
