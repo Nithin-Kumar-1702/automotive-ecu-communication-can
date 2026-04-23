@@ -6,14 +6,14 @@
 
 void can_init(void)
 {
-VPBDIV = 0;          //pclk=15mhz;
+VPBDIV = 1;          //pclk=60mhz;
 //PINSEL1|=0x40000;  //p0.25 ->Rd1
 PINSEL1|=(1<<18);
 PINSEL1|=(1<<16);
 C1MOD=0x1;		   //reset mode
 
 	AFMR=2;			   //accept all	incoming  msg
-C1BTR = 0x003C0007;  // ~125 kbps (approx)
+C1BTR = 0x001C001D;  // ~125 kbps (approx)
 C1MOD=0x0;		   //release reset mode
 }
 
